@@ -1,8 +1,9 @@
 name: VyOS v1.3.x LTS Release
 
 on:
-  schedule:
-    - cron: 40 15 * * *   
+  workflow_dispatch:
+jobs:
+  start:
  
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
